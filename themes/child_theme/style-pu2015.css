@@ -2909,6 +2909,11 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 */
 /* WordPress CSS fixes */
+
+.maincontent {
+    padding-top:10px;
+}
+
 .maincontent a {
     color: #a3792c;
 }
@@ -3300,4 +3305,9 @@ font-size: 1em;
 .shader{
 margin-top:5%;
 }
+}
+
+.no-tp {
+    /* no top padding */
+    padding-top: 0;
 }
