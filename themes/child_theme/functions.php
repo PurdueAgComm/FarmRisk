@@ -1,9 +1,11 @@
 <?php
 
 function updated_purduetwentyfourteen_scripts() {
-wp_enqueue_style( 'bootstrap.min', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' );
-wp_enqueue_script('bootstrap.min', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array(), true);
+  wp_enqueue_style( 'bootstrap.min', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' );
+  wp_enqueue_script('bootstrap.min', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array(), true);
+  wp_enqueue_script('jquery.min', 'https://code.jquery.com/jquery-3.1.1.min.js', array(). true);
 }
+
 remove_action( 'wp_enqueue_scripts', 'purduetwentyfourteen_scripts' );
 add_action( 'wp_enqueue_scripts', 'updated_purduetwentyfourteen_scripts' );
 
