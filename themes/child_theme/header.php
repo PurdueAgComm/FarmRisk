@@ -171,9 +171,9 @@ var _gaq = _gaq || [];
 <div class="top">
 <div class="container">
   <div class="row">
-    <div  class="logo col-lg-2 col-md-2 col-sm-4 col-xs-12">
+    <div  class="logo col-lg-4 col-md-2 col-sm-4 col-xs-12">
       <a href="/">
-        <img class="img-responsive aglogo" src="https://agriculture.purdue.edu/graphics/PurdueAgLogo.svg" onerror="this.src=//agriculture.purdue.edu/graphics/PurdueAgLogo.png; this.onerror=null;" >
+        <img class="img-responsive" src="<?php echo site_url();?>/wp-content/themes/child_theme/img/cca.png">
       </a>
     </div>
     <div  class="logo col-lg-2 col-md-2 col-sm-4 col-xs-6">
@@ -187,7 +187,7 @@ var _gaq = _gaq || [];
       </a>
     </div>
     <!-- Insert Department or Center Name Below -->
-    <div class="col-sm-6 hidden-xs hidden-sm">
+    <div class="col-sm-4 hidden-xs hidden-sm">
       <h1 class="logotext">
         <a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
       </h1>
