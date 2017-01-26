@@ -942,7 +942,7 @@ u {
 h1.logotext {
     font-weight: normal;
     font-size: 2em;
-    margin-top: 6.2%;
+    margin-top: 12%;
     color: rgb(255, 255, 255) !important;
 }
 
@@ -3256,11 +3256,7 @@ Tags: Responsive, Bootstrap, Purdue, 2014, Font Awesome, Advanced Custom Fields,
 
 }
 
-.shader{
-  background-color:rgba(0,0,0,.6);
-  margin-top: 30%;
-  padding: 2em;
-}
+
 .fullwidthheader{
   color: #fff !important;
     font-size: 3em;
@@ -3268,6 +3264,7 @@ Tags: Responsive, Bootstrap, Purdue, 2014, Font Awesome, Advanced Custom Fields,
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 1em;
+    margin-top: 10%;
 
 }
 
@@ -3363,6 +3360,11 @@ color:#fff !important;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   min-height:171px;
   background-color: white;
+}
+
+.secondarystorytitle {
+    padding-top: .3em;
+    padding-bottom: .3em;
 }
 
 .secondaryimage{
