@@ -30,6 +30,10 @@ get_header(); ?>
 <div class="container">
   <div class="row" style="padding: 15px 0; border-bottom: 1px solid #dadada;">
     <div class="col-sm-12">
+    <h1>Managing Risk in Agriculture</h1>
+    <p style="font-size: 1.2em;">When it comes to farm management, one key to success is managing risk. That can be challenging in the current agricultural environment, but Managing Farm Risk is here to help. A partnership between Purdue University’s Center for Commercial Agriculture, the Indiana Soybean Alliance and the Indiana Corn Marketing Council, this site offers information and tools to help you better understand risk and develop an integrated approach to managing it. Case studies and worksheets give you hands-on practice with the tools and theories provided throughout the site.</p>
+    <br><br>
+    <h1>Featured Resources</h1><br>
     <?php
     // set the "paged" parameter (use 'page' if the query is on a static front page)
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -50,13 +54,13 @@ $the_query = new WP_Query($args);
     ?>
       <div id="firstfeature" class="col-lg-6 primarystory">
         <div id="primaryfeature">
-          <a href="<?php the_permalink(); ?>" style="text-decoration:none;">
+          <a href="<?php echo the_permalink(); ?>" style="text-decoration:none;">
             <div class="grids primarygrid">
               <figure class="effect-ruby">
                 <?php if(has_post_thumbnail()) : ?>
-                  <?php the_post_thumbnail( array( 550, 350), array( 'class' => 'img-responsive, img-home-portfolio, primarystorypic' ) ) ?>
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-responsive img-home-portfolio primarystorypic" alt="<?php the_title(); ?>">
                 <?php else : ?>
-                  <img class="img-responsive img-home-portfolio primarystorypic" alt="the_title();" src="http://placehold.it/550x350?text=No Image">
+                  <img class="img-responsive img-home-portfolio primarystorypic" alt="<?php the_title();?>" src="http://placehold.it/550x350?text=No Image">
                 <?php endif; ?>
                 <figcaption class="hidden-xs hidden-sm hidden-md" style="padding-top: 115px;"><p>Read More</p></figcaption>
               </figure>
@@ -84,7 +88,7 @@ $the_query = new WP_Query($args);
               <div class="grids">
                 <figure class="effect-ruby">
                   <?php if(has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail( array( 310, 200), array( 'class' => 'img-responsive, img-home-portfolio, primarystorypic' ) ) ?>
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-responsive img-home-portfolio primarystorypic" alt="<?php the_title(); ?>">
                   <?php else : ?>
                     <img class="img-responsive img-home-portfolio primarystorypic" alt="<?php the_title();?>" src="http://placehold.it/310x205?text=No Image">
                   <?php endif; ?>
