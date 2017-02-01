@@ -7,16 +7,26 @@
 
 get_header(); ?>
 
+<div class="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div id="breadcrumbs">
+          <?php the_breadcrumb(); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <?php get_template_part( 'content', 'page' ); ?>
+        <?php get_template_part( 'content', 'home' ); ?>
       </div>
     </div>
   </div>
 <?php endwhile; // end of the loop. ?>
-
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -41,7 +51,7 @@ get_header(); ?>
             </div>
           <?php endforeach; ?>
 
-</div></div></div></div></div></div></div></div>
+</div></div></div><br>
 
 <?php
 //get_sidebar();
