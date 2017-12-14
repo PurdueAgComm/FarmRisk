@@ -33,6 +33,8 @@ var _gaq = _gaq || [];
   // The number here is for the main Purdue analytics account
   _gaq.push(['_setAccount', 'UA-2785081-1']);
   _gaq.push(['_setAccount', 'UA-31151555-1']);
+  _gaq.push(['_setAccount', 'UA-99730717-1']); // farm risk crm tracking
+
   _gaq.push(['_trackPageview']);
 
   // If you're tracking to your own account above and would also like track page views
